@@ -19,10 +19,14 @@ public class OrlandoMarcoClass {
 	 * @param f-> numero da inserire per calcolarne la sommatoria
 	 * @return il valore della sommatoria
 	 */
+	/*
+	 * Innanzitutto l'errore risiede nell'operazione di moltiplicazione invece che l'addizione, ed inoltre
+	 * è sbagliata anche la condizione del ciclo for
+	 */
 	public int orlandoMet(int f) {
-		int r=1;
-		for(int i=f; i<0; i++) {
-			r=r*i;
+		int r=0;
+		for(int i=0; i<=f; i++) {
+			r=r+i;
 		}
 		return r;
 	}
